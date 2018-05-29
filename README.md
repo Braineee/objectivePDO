@@ -11,7 +11,7 @@
 ```php
 require_once (Config.php");
 require_once (init.php"); 
-require_once (init.php");
+require_once (DB.php");
 ```
 
 - NOTE: The folder path may vary pending on the structure of your directory.
