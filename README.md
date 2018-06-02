@@ -27,41 +27,60 @@ var_dump($newConnection);
 ```
 
 
-#How to query the database
+#How to query tables in the database
 - Use this to query the database
 
 ```php
-$newConnection = DB::getInstance()->query("SELECT * FROM [table_name]");
+$getData = $newConnection->query("SELECT * FROM [table_name]");
 
-var_dump($newConnection);
+var_dump($getData);
 ```
+NOTE: You can write any query statement inbetween the query brackets i.e  "->query([any query string goes in here])"
 
 - Use this to get all the records
 
 ```php
-var_dump($newConnection->results());
+var_dump($getData->results());
 ```
 
 - Use this to get the first record
 
 ```php
-var_dump($newConnection->first());
+var_dump($getData->first());
 ```
 
 - Use this to get the record count
 
 ```php
-var_dump($newConnection->count());
+var_dump($getData->count());
 ```
 
 - Use this to get the error status
 
 ```php
-var_dump($newConnection->error());
+var_dump($getData->error());
 ```
 
 - Use this to get the error message
 
 ```php
-var_dump($newConnection->error_message());
+var_dump($getData->error_message());
+```
+
+
+
+#How to update tables in the database
+- Use this to update a record
+
+```php
+$updateRecord = $newConnection->update([table_name],[name_of_primary_key_column],[record_id],[fields_to_update]);
+```
+Example:
+Given a table user containing user data: 
+userid | name  | sex | age
+1	   | David | M   | 20
+2	   | MIKE  | M   | 22
+We would update the record Mike this way:
+```php
+$updateRecord = $newConnection->update(user,userid,2,array("name" => mikel, "age" => 34));
 ```
