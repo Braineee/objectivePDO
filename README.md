@@ -77,10 +77,10 @@ var_dump($getData->error_message());
 $updateRecord = $newConnection->update([table_name],[name_of_primary_key_column],[record_id],[fields_to_update]);
 ```
 Example:
-Given a table user containing user data: 
-userid | name  | sex | age
-1	   | David | M   | 20
-2	   | MIKE  | M   | 22
+Given a table user containing user data: <br>
+userid | name  | sex | age<br>
+1	   | David | M   | 20<br>
+2	   | MIKE  | M   | 22<br>
 We would update the record Mike this way:
 ```php
 $updateRecord = $newConnection->update(user,userid,2,array("name" => mikel, "age" => 34));
