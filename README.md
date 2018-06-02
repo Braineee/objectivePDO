@@ -1,5 +1,5 @@
 # objectivePDO
-#### objectivePDO is a PHP object for connection to database using PDO
+#### objectivePDO is a PHP object for connecting and manipulating database using PDO
 
 
 
@@ -36,6 +36,7 @@ $getData = $newConnection->query("SELECT * FROM [table_name]");
 var_dump($getData);
 ```
 NOTE: You can write any query statement inbetween the query brackets i.e  "->query([any query string goes in here])"
+
 
 - Use this to get all the records
 
@@ -84,3 +85,5 @@ We would update the record Mike this way:
 ```php
 $updateRecord = $newConnection->update(user,userid,2,array("name" => mikel, "age" => 34));
 ```
+
+
