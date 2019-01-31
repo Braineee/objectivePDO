@@ -83,7 +83,7 @@ userid | name  | sex | age<br>
 2	   | MIKE  | M   | 22<br><br>
 We would update the record Mike this way:
 ```php
-$updateRecord = $newConnection->update(user,userid,2,array("name" => mikel, "age" => 34));
+$updateRecord = $newConnection->update(user,userid,2,array("name" => mike2, "age" => 34));
 ```
 
 
