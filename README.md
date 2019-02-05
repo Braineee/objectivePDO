@@ -16,6 +16,8 @@ require_once (DB.php");
 
 - NOTE: The folder path may vary pending on the structure of your directory.
 
+- NOTE: Open the init.php file to set database credentials.
+
 
 #How to Open Connection with the database
 - Use this to open connection with the database
