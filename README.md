@@ -1,5 +1,5 @@
 # objectivePDO
-#### objectivePDO is a PHP object for connecting and manipulating database using PDO.
+#### objectivePDO is a PHP object for connecting and manipulating database using PDO
 
 
 
